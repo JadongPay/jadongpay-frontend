@@ -1,6 +1,7 @@
 // src/components/common/Footer.jsx
 import React from 'react';
 import { Link } from 'react-router-dom';
+import logo from '../../assets/images/logo.png';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -10,8 +11,10 @@ const Footer = () => {
       <div className="footer-container">
         <div className="footer-top">
           <div className="footer-logo">
-            <div className="logo-image"></div>
-            <div className="logo-text">JadongPay</div>
+            <div className="footer-logo-container">
+              <img src={logo} alt="JadongPay Logo" className="logo-image" />
+              <div className="logo-text">JadongPay</div>
+          </div>
           </div>
           
           <div className="footer-links">

@@ -1,6 +1,7 @@
 // src/components/home/Hero.jsx
 import React from 'react';
 import { Link } from 'react-router-dom';
+import heroLogo from '../../assets/images/hero-logo.png';
 
 const Hero = () => {
   return (
@@ -16,8 +17,7 @@ const Hero = () => {
           </div>
         </div>
         <div className="hero-image">
-          {/* Placeholder for hero image */}
-          <div className="token-image-placeholder"></div>
+          <img src={heroLogo} alt="JPAY Token" className="token-image" />
         </div>
       </div>
       

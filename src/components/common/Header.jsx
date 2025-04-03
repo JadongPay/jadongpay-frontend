@@ -1,6 +1,7 @@
 // src/components/common/Header.jsx
 import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
+import logo from '../../assets/images/logo.png';
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -39,7 +40,7 @@ const Header = () => {
       <div className="header-container">
         <div className="logo">
           <Link to="/">
-            <div className="logo-image"></div>
+            <img src={logo} alt="JadongPay Logo" className="logo-image" />
             <span className="logo-text">JadongPay</span>
           </Link>
         </div>

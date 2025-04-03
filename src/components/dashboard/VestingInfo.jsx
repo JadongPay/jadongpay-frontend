@@ -238,6 +238,8 @@ const VestingInfo = () => {
                 </span>
               </div>
             </div>
+
+            
             
             {/* Section de débogage - peut être retiré en production */}
             <div className="debug-section" style={{ marginTop: '20px', borderTop: '1px solid #ddd', paddingTop: '10px', fontSize: '0.8em', color: '#666' }}>
