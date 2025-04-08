@@ -1,4 +1,8 @@
 import React from 'react';
+import phase1Icon from '../../assets/images/phase1-icon.png';
+import phase2Icon from '../../assets/images/phase2-icon.png';
+import phase3Icon from '../../assets/images/phase3-icon.png';
+import phase4Icon from '../../assets/images/phase4-icon.png';
 
 const Roadmap = () => {
   return (
@@ -11,7 +15,7 @@ const Roadmap = () => {
       <div className="section-content">
         <div className="roadmap-timeline">
           <div className="timeline-phase">
-            <div className="phase-icon phase1"></div>
+          <img src={phase1Icon} alt="Phase 1" className="phase-icon" />
             <div className="phase-header">
               <h3>Phase 1: Lancement</h3>
               <div className="phase-period">T1-T2 2025</div>
@@ -28,7 +32,7 @@ const Roadmap = () => {
           </div>
           
           <div className="timeline-phase">
-            <div className="phase-icon phase2"></div>
+          <img src={phase2Icon} alt="Phase 2" className="phase-icon" />
             <div className="phase-header">
               <h3>Phase 2: Croissance</h3>
               <div className="phase-period">T2-T3 2025</div>
@@ -45,7 +49,7 @@ const Roadmap = () => {
           </div>
           
           <div className="timeline-phase">
-            <div className="phase-icon phase3"></div>
+          <img src={phase3Icon} alt="Phase 3" className="phase-icon" />
             <div className="phase-header">
               <h3>Phase 3: Expansion</h3>
               <div className="phase-period">T3-T4 2025</div>
@@ -62,7 +66,7 @@ const Roadmap = () => {
           </div>
           
           <div className="timeline-phase">
-            <div className="phase-icon phase4"></div>
+          <img src={phase4Icon} alt="Phase 4" className="phase-icon" />
             <div className="phase-header">
               <h3>Phase 4: Maturité</h3>
               <div className="phase-period">2026+</div>
