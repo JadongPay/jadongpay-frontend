@@ -1,5 +1,9 @@
 // src/components/home/Tokenomics.jsx
 import React from 'react';
+import rewardsThresholdIcon from '../../assets/images/rewards-threshold-icon.png';
+import poolThresholdIcon from '../../assets/images/pool-threshold-icon.png';
+import txLimitIcon from '../../assets/images/tx-limit-icon.png';
+import walletLimitIcon from '../../assets/images/wallet-limit-icon.png';
 
 const Tokenomics = () => {
   return (
@@ -105,34 +109,34 @@ const Tokenomics = () => {
         <h3>Seuils et Limites</h3>
         <div className="limit-items">
           <div className="limit-item">
-            <div className="limit-icon rewards-threshold"></div>
-            <div className="limit-info">
-              <h4>Seuil minimum de récompenses</h4>
-              <p>1000 JPAY (détention minimale)</p>
-            </div>
-          </div>
-          <div className="limit-item">
-            <div className="limit-icon pool-threshold"></div>
-            <div className="limit-info">
-              <h4>Seuil de traitement du pool</h4>
-              <p>500 JPAY (montant minimal)</p>
-            </div>
-          </div>
-          <div className="limit-item">
-            <div className="limit-icon tx-limit"></div>
-            <div className="limit-info">
-              <h4>Limite de transaction</h4>
-              <p>0.5% de l'offre totale</p>
-            </div>
-          </div>
-          <div className="limit-item">
-            <div className="limit-icon wallet-limit"></div>
-            <div className="limit-info">
-              <h4>Limite de portefeuille</h4>
-              <p>2% de l'offre totale</p>
-            </div>
+          <img src={rewardsThresholdIcon} alt="Seuil minimum de récompenses" className="limit-icon" />
+          <div className="limit-info">
+            <h4>Seuil minimum de récompenses</h4>
+            <p>1000 JPAY (détention minimale)</p>
           </div>
         </div>
+        <div className="limit-item">
+          <img src={poolThresholdIcon} alt="Seuil de traitement du pool" className="limit-icon" />
+          <div className="limit-info">
+            <h4>Seuil de traitement du pool</h4>
+            <p>500 JPAY (montant minimal)</p>
+          </div>
+        </div>
+        <div className="limit-item">
+          <img src={txLimitIcon} alt="Limite de transaction" className="limit-icon" />
+          <div className="limit-info">
+            <h4>Limite de transaction</h4>
+            <p>0.5% de l'offre totale</p>
+          </div>
+        </div>
+        <div className="limit-item">
+          <img src={walletLimitIcon} alt="Limite de portefeuille" className="limit-icon" />
+          <div className="limit-info">
+            <h4>Limite de portefeuille</h4>
+            <p>2% de l'offre totale</p>
+          </div>
+        </div>
+      </div>
       </div>
     </section>
   );

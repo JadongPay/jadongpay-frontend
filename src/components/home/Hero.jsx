@@ -2,6 +2,10 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import heroLogo from '../../assets/images/hero-logo.png';
+import rewardsIcon from '../../assets/images/rewards-icon.png';
+import securityIcon from '../../assets/images/security-icon.png';
+import tokenomicsIcon from '../../assets/images/tokenomics-icon.png';
+import vestingIcon from '../../assets/images/vesting-icon.png';
 
 const Hero = () => {
   return (
@@ -23,22 +27,22 @@ const Hero = () => {
       
       <div className="key-features">
         <div className="feature">
-          <div className="feature-icon rewards-icon"></div>
+          <img src={rewardsIcon} alt="Récompenses USDT" className="feature-icon" />
           <h3>Récompenses USDT</h3>
           <p>Distribution automatique en stablecoin</p>
         </div>
         <div className="feature">
-          <div className="feature-icon security-icon"></div>
+          <img src={securityIcon} alt="Sécurité Multi-couches" className="feature-icon" />
           <h3>Sécurité Multi-couches</h3>
           <p>Protection anti-manipulation avancée</p>
         </div>
         <div className="feature">
-          <div className="feature-icon tokenomics-icon"></div>
+          <img src={tokenomicsIcon} alt="Tokenomique Équilibrée" className="feature-icon" />
           <h3>Tokenomique Équilibrée</h3>
           <p>Modèle durable et transparent</p>
         </div>
         <div className="feature">
-          <div className="feature-icon vesting-icon"></div>
+          <img src={vestingIcon} alt="Vesting Stratégique" className="feature-icon" />
           <h3>Vesting Stratégique</h3>
           <p>Stabilité et croissance à long terme</p>
         </div>
