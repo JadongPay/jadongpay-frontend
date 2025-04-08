@@ -453,3 +453,77 @@
 .fund-distribution .pie-chart-container {
   margin-top: 1.5rem;
 }
+
+/* Harmonisation des espacements de section */
+.section {
+  padding: var(--spacing-xxl) 0;
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+.section-content {
+  padding: 0 var(--spacing-xl);
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: var(--spacing-xl);
+}
+
+.section-header h2 {
+  font-size: var(--font-size-xxl);
+  color: var(--text-primary);
+  margin-bottom: var(--spacing-sm);
+}
+
+.section-divider {
+  height: 4px;
+  width: 60px;
+  background-color: var(--primary-color);
+  margin: var(--spacing-md) auto var(--spacing-xl);
+}
+
+.section-subtitle {
+  margin-top: var(--spacing-xl);
+  margin-bottom: var(--spacing-lg);
+  font-size: var(--font-size-xl);
+  font-weight: var(--font-weight-semibold);
+  color: var(--primary-color);
+}
+
+/* Assurez-vous que les marges entre les composants sont cohérentes */
+.about-content,
+.problem-solution,
+.features-grid,
+.distribution-chart,
+.tax-section,
+.limits-section,
+.roadmap-timeline,
+.faq-container {
+  margin-bottom: var(--spacing-xl);
+}
+
+/* Espacement vertical pour les sous-composants */
+.about-card,
+.tax-card,
+.limit-item,
+.feature-card,
+.timeline-phase,
+.faq-item {
+  margin-bottom: var(--spacing-lg);
+}
+
+/* Ajustez les espacements responsifs */
+@media (max-width: 768px) {
+  .section {
+    padding: var(--spacing-xl) 0;
+  }
+  
+  .section-content {
+    padding: 0 var(--spacing-lg);
+  }
+  
+  .section-header {
+    margin-bottom: var(--spacing-lg);
+  }
+}
