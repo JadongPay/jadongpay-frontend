@@ -51,7 +51,7 @@ const Footer = () => {
                 <li>
                   <a href="#" target="_blank" rel="noopener noreferrer" className="social-icon">
                     <img src={twitterIcon} alt=" X " className="social-icon-img" />
-                    <span>Twitter (X)</span>
+                    <span> X (Twitter) </span>
                   </a>
                 </li>
                 <li>
@@ -73,7 +73,7 @@ const Footer = () => {
                   </a>
                 </li>
                 <li>
-                  <a href="#" target="_blank" rel="noopener noreferrer" className="social-icon">
+                  <a href="https://github.com/JadongPay" target="_blank" rel="noopener noreferrer" className="social-icon">
                     <img src={githubIcon} alt="GitHub" className="social-icon-img" />
                     <span>GitHub</span>
                   </a>
