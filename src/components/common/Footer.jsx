@@ -2,6 +2,11 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import logo from '../../assets/images/logo.png';
+import twitterIcon from '../../assets/images/twitter-icon.png';
+import instagramIcon from '../../assets/images/instagram-icon.png';
+import tiktokIcon from '../../assets/images/tiktok-icon.png';
+import telegramIcon from '../../assets/images/telegram-icon.png';
+import githubIcon from '../../assets/images/github-icon.png';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -43,10 +48,36 @@ const Footer = () => {
             <div className="link-column">
               <h3>Social</h3>
               <ul className="social-links">
-                <li><a href="#" target="_blank" rel="noopener noreferrer" className="social-icon twitter">Twitter</a></li>
-                <li><a href="#" target="_blank" rel="noopener noreferrer" className="social-icon telegram">Telegram</a></li>
-                <li><a href="#" target="_blank" rel="noopener noreferrer" className="social-icon discord">Discord</a></li>
-                <li><a href="#" target="_blank" rel="noopener noreferrer" className="social-icon medium">Medium</a></li>
+                <li>
+                  <a href="#" target="_blank" rel="noopener noreferrer" className="social-icon">
+                    <img src={twitterIcon} alt=" X " className="social-icon-img" />
+                    <span>Twitter (X)</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" target="_blank" rel="noopener noreferrer" className="social-icon">
+                    <img src={instagramIcon} alt="Instagram" className="social-icon-img" />
+                    <span>Instagram</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" target="_blank" rel="noopener noreferrer" className="social-icon">
+                    <img src={tiktokIcon} alt="TikTok" className="social-icon-img" />
+                    <span>TikTok</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" target="_blank" rel="noopener noreferrer" className="social-icon">
+                    <img src={telegramIcon} alt="Telegram" className="social-icon-img" />
+                    <span>Telegram</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" target="_blank" rel="noopener noreferrer" className="social-icon">
+                    <img src={githubIcon} alt="GitHub" className="social-icon-img" />
+                    <span>GitHub</span>
+                  </a>
+                </li>
               </ul>
             </div>
           </div>
