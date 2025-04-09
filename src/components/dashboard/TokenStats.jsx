@@ -2,6 +2,12 @@
 import React, { useContext } from 'react';
 import { Web3Context } from '../../contexts/Web3Context';
 import { ContractContext } from '../../contexts/ContractContext';
+import circulatingSupplyIcon from '../../assets/images/circulating-supply-icon.png';
+import burnedIcon from '../../assets/images/burned-icon.png';
+import vestedIcon from '../../assets/images/vested-icon.png';
+import holdersIcon from '../../assets/images/holders-icon.png';
+import rewardsDistributedIcon from '../../assets/images/rewards-distributed-icon.png';
+import rewardsPoolIcon from '../../assets/images/rewards-pool-icon.png';
 
 
 // Helper to format Wei to Token amount
