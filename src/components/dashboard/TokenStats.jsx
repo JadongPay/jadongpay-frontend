@@ -66,24 +66,24 @@ const TokenStats = () => {
         </div>
         
         <div className="stats-grid">
-          <div className="stat-item">
-            <div className="stat-icon circulating-supply-icon"></div>
-            <div className="stat-data">
-              <h3>Circulating Supply</h3>
-              <p>{web3 ? formatFromWei(web3, tokenInfo.circulatingSupply) : '0'} JPAY</p>
-            </div>
+        <div className="stat-item">
+          <img src={circulatingSupplyIcon} alt="Circulating Supply" className="stat-icon" />
+          <div className="stat-data">
+            <h3>Circulating Supply</h3>
+            <p>{web3 ? formatFromWei(web3, tokenInfo.circulatingSupply) : '0'} JPAY</p>
           </div>
+        </div>
           
-          <div className="stat-item">
-            <div className="stat-icon burned-icon"></div>
+        <div className="stat-item">
+            <img src={burnedIcon} alt="Total Burned" className="stat-icon" />
             <div className="stat-data">
               <h3>Total Burned</h3>
               <p>{web3 ? formatFromWei(web3, tokenInfo.burned) : '0'} JPAY</p>
             </div>
           </div>
-          
+                    
           <div className="stat-item">
-            <div className="stat-icon vested-icon"></div>
+            <img src={vestedIcon} alt="Total Vested" className="stat-icon" />
             <div className="stat-data">
               <h3>Total Vested</h3>
               <p>{web3 ? formatFromWei(web3, tokenInfo.vested) : '0'} JPAY</p>
@@ -91,7 +91,7 @@ const TokenStats = () => {
           </div>
           
           <div className="stat-item">
-            <div className="stat-icon holders-icon"></div>
+            <img src={holdersIcon} alt="Total Holders" className="stat-icon" />
             <div className="stat-data">
               <h3>Total Holders</h3>
               <p>{tokenInfo.totalHolders}</p>
@@ -99,7 +99,7 @@ const TokenStats = () => {
           </div>
           
           <div className="stat-item">
-            <div className="stat-icon rewards-distributed-icon"></div>
+            <img src={rewardsDistributedIcon} alt="Total Rewards Distributed" className="stat-icon" />
             <div className="stat-data">
               <h3>Total Rewards Distributed</h3>
               <p>{web3 ? formatFromWei(web3, tokenInfo.totalRewards, 6) : '0'} USDT</p>
@@ -107,7 +107,7 @@ const TokenStats = () => {
           </div>
           
           <div className="stat-item">
-            <div className="stat-icon rewards-pool-icon"></div>
+            <img src={rewardsPoolIcon} alt="Rewards Pool" className="stat-icon" />
             <div className="stat-data">
               <h3>Rewards Pool</h3>
               <p>{web3 ? formatFromWei(web3, tokenInfo.rewardsBalance) : '0'} JPAY</p>
